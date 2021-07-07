@@ -46,6 +46,28 @@ const TestimonialList = ({ list }: any) => {
         }
     }, [indexes.currentIndex])
 
+    const setIndex = (idx: number) => {
+        if (idx >= list.length - 1) {
+            setIndexes({
+                previousIndex: idx - 1,
+                currentIndex: idx,
+                nextIndex: 0
+            })
+        } else if (idx === 0) {
+            setIndexes({
+                previousIndex: list.length - 1,
+                currentIndex: idx,
+                nextIndex: idx + 1
+            })
+        } else {
+            setIndexes({
+                previousIndex: idx - 1,
+                currentIndex: idx,
+                nextIndex: idx + 1
+            })
+        }
+    }
+
     React.useEffect(() => {
         const transitionInterval = setInterval(() => {
             handleCardTransition()
@@ -70,6 +92,26 @@ const TestimonialList = ({ list }: any) => {
             style={{ width: '100%', height: '400px' }}
             className={`flex flex-col my-4 mx-auto items-center mt-8`}
         >
+            <div className={`h-2 w-full m-4 space-x-2 flex justify-center`}>
+                <div
+                    onClick={() => setIndex(0)}
+                    className={`h-2 w-2 border border-gray-400 rounded-full inline-block cursor-pointer ${
+                        indexes.currentIndex === 0 && `bg-gray-400`
+                    }`}
+                ></div>
+                <div
+                    onClick={() => setIndex(1)}
+                    className={`h-2 w-2 border border-gray-400 rounded-full inline-block cursor-pointer ${
+                        indexes.currentIndex === 1 && `bg-gray-400`
+                    }`}
+                ></div>
+                <div
+                    onClick={() => setIndex(2)}
+                    className={`h-2 w-2 border border-gray-400 rounded-full inline-block cursor-pointer ${
+                        indexes.currentIndex === 2 && `bg-gray-400`
+                    }`}
+                ></div>
+            </div>
             <FadeIn className={`w-full h-full relative`}>
                 {list.map((item: itemProps, index: number) => (
                     <TestimonialItem
