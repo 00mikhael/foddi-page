@@ -13,3 +13,30 @@ body {
 .list > .item + .item {
     margin-left: 16px;
 }
+
+.card {
+    border: 1px solid #eeeeee;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease;
+    opacity: 0;
+    transform: scale(0.85) translateY(50px);
+}
+
+.card.active {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.card.next {
+    opacity: 1;
+    z-index: 0;
+}
+
+.card.prev {
+    transform: translateY(-50px);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}

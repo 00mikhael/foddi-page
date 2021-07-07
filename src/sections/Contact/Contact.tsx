@@ -9,10 +9,8 @@ import { ContactData as Data } from '../../appData'
 
 const Contact = () => {
     return (
-        <div className={` relative overflow-hidden`}>
-            <Container
-                className={`col-span-full row-span-full h-full w-full z-10`}
-            >
+        <div className={`relative overflow-hidden mt-12 sm:mt-0`}>
+            <Container>
                 <SectionHeading
                     title={Data.title}
                     subtitle={Data.subtitle}

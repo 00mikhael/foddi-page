@@ -9,7 +9,7 @@ import { testimonialsData as Data } from '../../appData'
 
 const Testimonials = () => {
     return (
-        <div className={`relative overflow-hidden mt-8`}>
+        <div className={`relative mt-12`}>
             <Container>
                 <SectionHeading
                     title={Data.title}
