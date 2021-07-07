@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    font-family: 'Poppins';
+}
+
+.list {
+}
+
+.list > .item + .item {
+    margin-left: 16px;
+}
