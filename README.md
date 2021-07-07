@@ -10,7 +10,7 @@
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/00mikhael/foddi-page.git
 ```
 
 Go to the project directory
@@ -22,18 +22,18 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  npm install
+  yarn or npm install
 ```
 
 Start the server
 
 ```bash
-  npm run start
+  yarn run dev or npm run dev
 ```
 
   
 ## Feedback
 
-If you have any feedback, please reach out to us at fake@fake.com
+If you have any feedback, please reach out to me on [Twitter](https://twitter.com/00mikhael)
 
   
