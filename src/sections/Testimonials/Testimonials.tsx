@@ -9,17 +9,17 @@ import { testimonialsData as Data } from '../../appData'
 
 const Testimonials = () => {
     return (
-        <div className={`relative overflow-hidden h-96`}>
+        <div className={`relative overflow-hidden mt-8`}>
             <Container>
                 <SectionHeading
                     title={Data.title}
                     subtitle={Data.subtitle}
                     slogan={Data.slogan}
                 />
-                <TestimonialList />
+                <TestimonialList list={Data.testimonials} />
             </Container>
             <span
-                className={`absolute -right-16 top-4 -mr-10 hidden md:inline-block`}
+                className={`absolute -right-16 top-4 -mr-10 hidden lg:inline-block`}
             >
                 <Image width={250} height={250} src={Data.backgroundImage} />
             </span>

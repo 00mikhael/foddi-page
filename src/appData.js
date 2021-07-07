@@ -22,21 +22,27 @@ export const testimonialsData = {
     backgroundImage: vegetables,
     testimonials: [
         {
+            id: 1,
             name: 'Keman',
+            avatar: 'https://uifaces.co//our-content//donated//eYVoSxV5.jpg',
             location: 'Tokyo',
             message:
                 'Initially i was a bit skeptical, but after the first patronage I just can’t forget the taste of their meal that day.',
             rating: 5
         },
         {
-            name: 'Cynthia',
-            location: 'Lagos',
+            id: 2,
+            name: 'Mary',
+            avatar: 'https://uifaces.co/our-content/donated/Zh_4oc5l.jpg',
+            location: 'Milan',
             message:
                 'Initially i was a bit skeptical, but after the first patronage I just can’t forget the taste of their meal that day.',
             rating: 5
         },
         {
-            name: 'Samuel',
+            id: 3,
+            name: 'Lokossou',
+            avatar: 'https://uifaces.co//our-content//donated//OOYrwOZH.jpg',
             location: 'Kampala',
             message:
                 'Initially i was a bit skeptical, but after the first patronage I just can’t forget the taste of their meal that day.',
@@ -53,6 +59,7 @@ export const ContactData = {
     backgroundImage: oval
 }
 
+// skeleton loading data
 export const SkeletonData = [
     {
         id: 1,

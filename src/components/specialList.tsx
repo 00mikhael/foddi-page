@@ -6,7 +6,7 @@ import Skeleton from 'react-loading-skeleton'
 
 import styles from '../styles/Interaction.module.css'
 
-import Rating from './rating.jsx'
+import Rating from './rating'
 
 interface itemProps {
     id: string
@@ -85,7 +85,7 @@ const SpecialItem = ({
             >
                 {strMealThumb ? (
                     <Image
-                        className={`object-cover rounded-bl-3xl`}
+                        className={`rounded-bl-3xl`}
                         layout='fill'
                         objectFit='cover'
                         src={strMealThumb}
@@ -119,7 +119,7 @@ const SpecialItem = ({
                         !ratings && `space-x-32 invisible sm:visible`
                     }`}
                 >
-                    <Rating count={ratings} />
+                    <Rating className='' count={ratings} />
                     <div
                         className={`${styles.button} bg-yellow-500 p-4 rounded-tl-3xl cursor-pointer`}
                     >

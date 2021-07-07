@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactStars from 'react-rating-stars-component'
 
-const Rating = ({ count }) => {
+const Rating = ({ className, count }) => {
     return (
-        <div className={`text-yellow-600`}>
+        <div className={`${className && className} text-yellow-600`}>
             <ReactStars
                 count={5}
                 value={count || 5}

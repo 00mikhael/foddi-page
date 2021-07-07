@@ -1,6 +1,6 @@
 module.exports = {
     reactStrictMode: true,
     images: {
-        domains: ['www.themealdb.com']
+        domains: ['www.themealdb.com', 'uifaces.co']
     }
 }
