@@ -1,5 +1,8 @@
 
 # foddi-page
+
+This is a [Nextjs](https://vercel.com/solutions/nextjs) project bootstrapped with [create-next-app](https://nextjs.org/docs/api-reference/create-next-app)
+
 ## Screenshots
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
