@@ -27,7 +27,9 @@ const SectionHeading = ({
                 </span>
             )}
             <h2 className={`text-4xl font-semibold`}>{title}</h2>
-            {slogan && <p className={`text-lg text-gray-700`}>{slogan}</p>}
+            {slogan && (
+                <span className={`text-base mt-1 text-gray-700`}>{slogan}</span>
+            )}
         </div>
     )
 }
