@@ -1,11 +1,11 @@
 
 # foddi-page
 
-We serve what you love ❤️
+### We serve what you love  ❤️
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/00mikhael/foddi-page/main/raw/screenshot.png)
 
   
 ## Run Locally
