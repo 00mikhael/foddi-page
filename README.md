@@ -1,7 +1,7 @@
 
 # foddi-page
 
-This is a [Nextjs](https://vercel.com/solutions/nextjs) project bootstrapped with [create-next-app](https://nextjs.org/docs/api-reference/create-next-app)
+We serve what you love ❤️
 
 ## Screenshots
 
