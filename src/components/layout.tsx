@@ -5,7 +5,11 @@ interface layoutProps {
 }
 
 const Layout = ({ children }: layoutProps) => {
-    return <main className={`min-h-screen flex flex-col`}>{children}</main>
+    return (
+        <main className={`min-h-screen flex flex-col overflow-hidden`}>
+            {children}
+        </main>
+    )
 }
 
 export default Layout
